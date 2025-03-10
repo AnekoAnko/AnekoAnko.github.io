@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моніторинг здоров'я</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#trainings">Тренування</a></li>
+                <li><a href="#progress">Мій прогрес</a></li>
+                <li><a href="#diet">Раціон</a></li>
+                <li><a href="#log">Журнал</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="trainings">
+            <h2>Тренування</h2>
+            <div class="grid-container" id="trainingList"></div>
+        </section>
+        
+        <section id="progress">
+            <h2>Мій прогрес</h2>
+            <div class="progress-container">
+                <p>Пройдені тренування: <span id="completed-workouts">5</span></p>
+                <p>Спалені калорії: <span id="burned-calories">1200 ккал</span></p>
+            </div>
+        </section>
+        
+        <section id="diet">
+            <h2>Раціон</h2>
+            <button id="toggleDietForm">Додати прийом їжі</button>
+            <div id="dietFormContainer" style="display: none;">
+                <form id="diet-form">
+                    <label for="meal">Прийом їжі:</label>
+                    <input type="text" id="meal" name="meal" placeholder="Назва страви" required>
+                    
+                    <label for="calories">Калорії:</label>
+                    <input type="number" id="calories" name="calories" placeholder="Ккал" required>
+                    
+                    <button type="submit">Додати</button>
+                </form>
+            </div>
+            <ul id="dietList"></ul>
+        </section>
+
+        <section id="log">
+            <h2>Журнал тренувань</h2>
+            <ul id="trainingLog"></ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Контакти: email@example.com | Телефон: +380123456789</p>
+    </footer>
+
+    <script src="script.js">
+     
+    </script>
+</body>
+</html>

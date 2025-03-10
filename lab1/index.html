@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моніторинг здоров'я</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#trainings">Тренування</a></li>
+                <li><a href="#progress">Мій прогрес</a></li>
+                <li><a href="#diet">Раціон</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="trainings">
+            <h2>Тренування</h2>
+            <div class="grid-container">
+                <article class="training-card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/powerlifter-with-strong-arms-lifting-weights-royalty-free-image-595768514-1546267269.jpg" alt="Тренування 1">
+                    <h3>Силове тренування</h3>
+                    <p>Комплекс вправ для нарощування м'язової маси.</p>
+                    <video controls>
+                        <source src="videos/strength-training.mp4" type="video/mp4">
+                    </video>
+                </article>
+                <article class="training-card">
+                    <img src="https://www.shape.com/thmb/DjCIHGX6cWaIniuqHeBAAreNE08=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/best-cardio-exercises-promo-2000-498cbfb8f07541b78572bf810e7fb600.jpg" alt="Тренування 2">
+                    <h3>Кардіо</h3>
+                    <p>Вправи для підвищення витривалості та спалювання калорій.</p>
+                    <video controls>
+                        <source src="videos/cardio.mp4" type="video/mp4">
+                    </video>
+                </article>
+            </div>
+        </section>
+        
+        <section id="progress">
+            <h2>Мій прогрес</h2>
+            <div class="progress-container">
+                <p>Пройдені тренування: <span id="completed-workouts">5</span></p>
+                <p>Загальний час тренувань: <span id="total-time">3 години 20 хвилин</span></p>
+                <p>Спалені калорії: <span id="burned-calories">1200 ккал</span></p>
+            </div>
+        </section>
+        
+        <section id="diet">
+            <h2>Раціон</h2>
+            <form id="diet-form">
+                <label for="meal">Прийом їжі:</label>
+                <input type="text" id="meal" name="meal" placeholder="Назва страви" required>
+                
+                <label for="calories">Калорії:</label>
+                <input type="number" id="calories" name="calories" placeholder="Ккал" required>
+                
+                <button type="submit">Додати</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Контакти: email@example.com | Телефон: +380123456789</p>
+    </footer>
+    
+</body>
+</html>
