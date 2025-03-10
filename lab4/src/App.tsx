@@ -5,8 +5,6 @@ import React from "react";
 import WorkoutPrograms from "./components/WorkoutPrograms";
 import ProgressChart from "./components/ProgressChart";
 
-
-
 function PrivateRoute({ children }: { children: React.JSX.Element }) {
   const { user } = useAuth();
 
